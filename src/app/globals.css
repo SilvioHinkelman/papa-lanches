@@ -21,6 +21,17 @@ body {
 }
 
 @layer utilities {
+  .shape {
+    float: left; /* Faz a imagem flutuar à esquerda */
+    shape-outside: polygon(0 0, 100% 100%, 0 100%); /* Define a forma do contorno */
+    clip-path: polygon(0 0, 100% 100%, 0 100%); /* Recorta a imagem para a forma de triângulo */
+    width: 150px; /* Ajuste o tamanho da imagem */
+    height: 150px; /* Ajuste o tamanho da imagem */
+    margin-right: 1rem; /* Espaçamento entre a imagem e o texto */
+}
+
+
+
   @keyframes slide-to-stop {
     0% {
       transform: translateX(-3000px); 

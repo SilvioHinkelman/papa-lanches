@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MockHistory } from "./MockData";
+import { MockHistory } from "../DataMock/MockData";
 
 export default function Home() {
   return (
