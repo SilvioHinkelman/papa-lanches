@@ -10,38 +10,39 @@ interface IProps {
 const CardMenu: React.FC<IProps> = ({ menu }) => {
   return (
     <Card className="w-full bg-green-200">
-      <CardHeader className="flex gap-3">
-        <Image
-          alt="nextui logo"
-          height={40}
-          radius="sm"
-          src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-          width={40}
-        />
-        <div className="flex flex-col">
-          <p className="text-md text-red-700">{menu?.title}</p>
-          <p className="text-small text-default-500">{menu?.ingredient}</p>
-        </div>
+      <CardHeader className="flex flex-col bg-purple-200 gap-3">
+        <p className="text-md text-red-700 bg-purple-400 mr-auto">
+          {menu?.title}
+        </p>
+        {!!menu.img && (
+          <Image
+            alt={menu.title}
+            radius="sm"
+            src={menu.img.src}
+           /*  height={340}
+            width={420} */
+            className="object-contain bg-red-500 mx-auto"
+          />
+        )}
+        <p className="text-small mr-auto text-default-500">
+          {menu?.ingredient}
+        </p>
       </CardHeader>
       <Divider />
       <CardBody>
         <div className="flex flex-col gap-6">
           {menu?.menus.map((menu) => {
             return (
-              <h5 className="text-red-400 bg-gray-200" key={menu.id}>
+              <div className="text-red-400 bg-gray-200" key={menu.id}>
                 {menu.subtitleCard}
-                {menu.types.map((sabores) => {
-                  return (
-                    <h1 key={sabores?.id}>
-                      {sabores?.title}
-                      {sabores?.ingredient ? ` - ${sabores?.ingredient}` : ""}
-                    </h1>
-                  );
-                })}
-                {/* <span className="text-black">
-                  {type.ingredient ? ` - ${type.ingredient}` : ""}
-                </span> */}
-              </h5>
+                <h1 className="text-pink-700">{menu.description}</h1>
+                {menu.types.map((sabores) => (
+                  <h1 key={sabores?.id} className="text-blue-600">
+                    {sabores?.title}
+                    {sabores?.ingredient ? ` - ${sabores?.ingredient}` : ""}
+                  </h1>
+                ))}
+              </div>
             );
           })}
         </div>
