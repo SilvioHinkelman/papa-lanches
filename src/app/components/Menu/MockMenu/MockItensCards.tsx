@@ -365,6 +365,29 @@ export const pratosTradicionais: CheeseBurgerType[] = [
   },
 ];
 
+export const fingerFood: CheeseBurgerType[] = [
+  {
+    id: 1,
+    title: "Filé de Frango",
+  },
+  {
+    id: 2,
+    title: "Picanha",
+  },
+  {
+    id: 3,
+    title: "Filé Mignon",
+  },
+  {
+    id: 4,
+    title: "Coração de Frango ",
+  },
+  {
+    id: 5,
+    title: "Calabresa",
+  },
+];
+
 export const petiscosEspeciais: CheeseBurgerType[] = [
   {
     id: 1,
@@ -735,54 +758,363 @@ export const saboresoPizza: CheeseBurgerType[] = [
 ];
 
 export const pratosPromoAlmocoAlvorada: CheeseBurgerType[] = [
-    {
-      id: 1,
-      title: "parei aqui",
-      ingredient:
-        "Coraçeiga",
-    },
-    {
-      id: 2,
-      title: "Alheo",
-      ingredient: "Alhiva",
-    },
-    {
-      id: 3,
-      title: "Atuebola",
-    },
-    {
-      id: 4,
-      title: "Bacon",
-    },
-    {
-      id: 5,
-      title: "CalabCebola ",
-    },
-    {
-      id: 6,
-      title: "Coraçãngo",
-    },
-    {
-      id: 7,
-      title: "Cinco Queijos",
-      ingredient: "Parmesãoe",
-    },
-    {
-      id: 8,
-      title: "Filé de Frango",
-    },
-    {
-      id: 9,
-      title: "Filé",
-    },
-    {
-      id: 10,
-      title: "Filé Mignon",
-    },
-    {
-      id: 11,
-      title: "Fricassê",
-      ingredient: "Filé",
-    },
-   
-  ];
+  {
+    id: 1,
+    title: "Bife",
+    ingredient: "Bife de alcatra, arroz e fritas",
+  },
+  {
+    id: 2,
+    title: "Bife 4 Queijos",
+    ingredient:
+      "Bife de alcatra ao molho quatro queijos, arroz e cebola à milanesa",
+  },
+  {
+    id: 3,
+    title: "Bife ao Molho",
+    ingredient: "Bife de alcatra ao molho madeira, arroz e purê de batatas",
+  },
+  {
+    id: 4,
+    title: "Frango",
+    ingredient: "Filé de frango grelhado e salada mista",
+  },
+  {
+    id: 5,
+    title: "Peixe",
+    ingredient: "Filé de peixe à milanesa, arroz e batata a vapor",
+  },
+  {
+    id: 6,
+    title: "Estrogonofe",
+    ingredient:
+      "Picadinho de carne ao molho vermelho com creme de leite e champignon, arroz e batata palha ",
+  },
+  {
+    id: 7,
+    title: "Fricassé",
+    ingredient:
+      "Filé de frango em cubos ao molho vermelho com creme de leite e champignon, arroz e batata palha",
+  },
+  {
+    id: 8,
+    title: "Carreteiro",
+  },
+  {
+    id: 9,
+    title: "Risoto",
+  },
+];
+
+export const Pasta: CheeseBurgerType[] = [
+  {
+    id: 1,
+    title: "À Bolonhesa",
+    ingredient: "Ao molho vermelho com carne moída",
+  },
+  {
+    id: 2,
+    title: "À 4 Queijos",
+    ingredient:
+      "Iscas de filé mignon ao molho de queijo parmesão, prato, mussarela, e gorgonzola",
+  },
+  {
+    id: 3,
+    title: "Ao Manjericão",
+    ingredient: "Ao molho vermelho com manjericão",
+  },
+  {
+    id: 4,
+    title: "Frango",
+    ingredient: "Ao molho vermelho e cubos de frango",
+  },
+];
+
+export const soups: CheeseBurgerType[] = [
+  {
+    id: 1,
+    title: "Capelete",
+  },
+  {
+    id: 2,
+    title: "Legumes",
+  },
+  {
+    id: 3,
+    title: "Minestrone",
+    ingredient: "Feijão e espaguete",
+  },
+];
+
+export const lunch: CheeseBurgerType[] = [
+  {
+    id: 1,
+    title: "Bife de Alcatra",
+  },
+  {
+    id: 2,
+    title: "Filé de Peixe",
+  },
+  {
+    id: 3,
+    title: "Filé Mignon",
+  },
+  {
+    id: 4,
+    title: "Filé de Frango",
+  },
+  {
+    id: 5,
+    title: "Entrecôte",
+  },
+  {
+    id: 6,
+    title: "Picanha",
+  },
+  {
+    id: 7,
+    title: "Lombo Suíno",
+  },
+];
+
+export const adds: CheeseBurgerType[] = [
+  {
+    id: 1,
+    title: "À Parmegiana",
+  },
+  {
+    id: 2,
+    title: "Quatro Queijos",
+  },
+  {
+    id: 3,
+    title: "Acebolado",
+  },
+  {
+    id: 4,
+    title: "Alho e Óleo",
+  },
+  {
+    id: 5,
+    title: "À Milanesa",
+  },
+];
+
+export const extrass: CheeseBurgerType[] = [
+  {
+    id: 1,
+    title: "Arroz",
+  },
+  {
+    id: 2,
+    title: "Feijão",
+  },
+  {
+    id: 3,
+    title: "Batatas Fritas",
+  },
+  {
+    id: 4,
+    title: "Ovo",
+  },
+  {
+    id: 5,
+    title: "Salada de Maionese",
+  },
+  {
+    id: 6,
+    title: "Filé de Frango(bife)",
+  },
+  {
+    id: 7,
+    title: "Filé de Peixe(bife)",
+  },
+  {
+    id: 8,
+    title: "Alcatra(bife)",
+  },
+  {
+    id: 9,
+    title: "Entrecotê(bife)",
+  },
+  {
+    id: 10,
+    title: "Picanha(bife)",
+  },
+  {
+    id: 11,
+    title: "Filé Mignon(bife)",
+  },
+];
+
+export const baurus: CheeseBurgerType[] = [
+  {
+    id: 1,
+    title: "5 QueijosContra filé",
+    ingredient: "Contra filé",
+  },
+  {
+    id: 2,
+    title: "Tradicional",
+    ingredient: "Contra filé",
+  },
+  {
+    id: 3,
+    title: "Filé de Frango",
+  },
+];
+
+export const baurusAlvorada: CheeseBurgerType[] = [
+  {
+    id: 1,
+    title: "Filé Mignon",
+  },
+  {
+    id: 2,
+    title: "Filé Mignon com Bacon",
+  },
+  {
+    id: 3,
+    title: "Filé Mignon 5 Queijos",
+  },
+  {
+    id: 4,
+    title: "Filé Mignon á Milanesa 5 Queijos",
+  },
+  {
+    id: 5,
+    title: "Filé Mignon com Palmito",
+  },
+  {
+    id: 6,
+    title: "Filé de Frango",
+  },
+  {
+    id: 7,
+    title: "Filé de Frango com Bacon",
+  },
+  {
+    id: 8,
+    title: "Filé de Frango 5 Queijos",
+  },
+  {
+    id: 9,
+    title: "Filé de Frango com Palmito",
+  },
+  {
+    id: 10,
+    title: "Picanha",
+  },
+  {
+    id: 11,
+    title: "Picanha com Bacon",
+  },
+  {
+    id: 12,
+    title: "Picanha 5 Queijos",
+  },
+  {
+    id: 13,
+    title: "Picanha com Palmito",
+  },
+  {
+    id: 14,
+    title: "Estrogonofe",
+  },
+  {
+    id: 15,
+    title: "Fricassé",
+  },
+];
+
+export const toasts: CheeseBurgerType[] = [
+  {
+    id: 1,
+    title: "Especial",
+    ingredient: "3 fatias de pão alface e tomate",
+  },
+  {
+    id: 2,
+    title: "Hamburger",
+    ingredient: "3 fatias de pão alface e tomate",
+  },
+  {
+    id: 3,
+    title: "Simples",
+    ingredient: "2 fatias de pão",
+  },
+];
+
+export const fingerFoodTwo: CheeseBurgerType[] = [
+  {
+    id: 1,
+    title: "Coração de Frango",
+  },
+  {
+    id: 2,
+    title: "Calabresa",
+  },
+  {
+    id: 3,
+    title: "Fritas",
+  },
+  {
+    id: 4,
+    title: "Fritas com Queijo",
+  },
+  {
+    id: 5,
+    title: "Filé Mignon",
+    ingredient: "Iscas",
+  },
+  {
+    id: 6,
+    title: "Lombo de Porco",
+    ingredient: "Iscas",
+  },
+  {
+    id: 7,
+    title: "Petiscos com Queijo",
+  },
+];
+
+export const sizes: CheeseBurgerType[] = [
+  {
+    id: 1,
+    title: "Média 30cm",
+  },
+  {
+    id: 2,
+    title: "Grande 35cm ",
+  },
+  {
+    id: 3,
+    title: "Família 40cm",
+  },
+  {
+    id: 4,
+    title: "Super Família 45cm",
+    ingredient:"Viamão e Alvorada"
+  },
+];
+
+export const sweetPizzas: CheeseBurgerType[] = [
+  {
+    id: 1,
+    title: "Califórnia",
+    ingredient:"Abacaxi, figo e pêssego"
+  },
+  {
+    id: 2,
+    title: "Brigadeiro",
+    ingredient:"Chocolate preto e granulado"
+  },
+  {
+    id: 3,
+    title: "Brigadeiro",
+  },
+  {
+    id: 4,
+    title: "Banana com Canela",
+  },
+];
